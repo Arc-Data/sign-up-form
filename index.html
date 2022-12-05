@@ -8,6 +8,65 @@
 	<script type="text/javascript" src = 'script.js' defer></script>
 </head>
 <body>
-	<div></div>
+	<div class="main-container">
+		<aside>
+			<div class="logo-section"></div>
+		</aside>
+		<form method = "POST" action = "">
+			<div class = "form-intro">
+				<p class = "intro-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+				<p class = "intro-text">You know you want to</p>
+			</div>
+			<div class = "form-content">
+				<p class = "content-header">Let's do this</p>
+				<div class = 'form-group'>
+					<div>
+						<label for ='fname'>
+							<p>First Name: </p>
+							<input type="text" name="fname" placeholder = "John" />
+						</label>
+					</div>
+					<div>
+						<label for ='lname'>
+							<p>Last Name: </p>
+							<input type="text" name="lname" placeholder = "Doe" />
+						</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<div>
+						<label for ='email'>
+							<p>Email: </p>
+							<input type="email" name="email" placeholder = "johndoe@gmail.com" />
+						</label>
+					</div>
+					<div>
+						<label for ='phonenumber'>
+							<p>Phone Number: </p>
+							<input type="tel" name="phonenumber" minlength="11" maxlength="11" placeholder = 'xxxx-xxx-xxxx' />
+						</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<div>
+						<label for ='password1'>
+							<p>Password: </p>
+							<input type="password" name="password1" placeholder = "Enter Password" />
+						</label>
+					</div>
+					<div>
+						<label for ='password2'>
+							<p>Confirm Password: </p>
+							<input type="password" name="password2" placeholder = "Confirm Password" />
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class = "form-submit">
+				<button type = 'submit' class = "btn">Create Account</button>
+				<p>Already have an account? <a href = "#">Log in</a></p>
+			</div>
+		</form>
+	</div>
 </body>
 </html>
