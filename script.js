@@ -9,10 +9,38 @@ const patterns = {
 const pass1 = document.querySelector('#password1');
 const pass2 = document.querySelector('#password2');
 
-const inputs 
 
-function validateForm() {
+function validatePassword() {
+	if(pass1.value !== pass2.value) {
+		pass1.classList.remove('valid');
+		pass2.classList.remove('valid');
+
+		pass1.classList.add('error');
+		pass2.classList.add('error');
+		return;
+	}
+
+	console.log(pass1.value)
+
+	const regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^\w\s]).{8, 16}$/;
+	const isValidPass = regex.test(pass1.value);
+
+
+	if (isValidPass) {
+		pass1.classList.add('error');
+	} else {
+		pass1.classList.remove('error');
+		pass2.classList.remove('error');
+
+		pass1.classList.add('valid');
+		pass2.classList.add('valid');
+
+	}
+}
+
+function validateForm(e) {
+
 
 }
 
-submitBtn.addEventListener('click', validateForm)
+pass2.addEventListener('change', validatePassword)

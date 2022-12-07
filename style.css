@@ -108,8 +108,7 @@ input:placeholder {
 	color:#ccc;
 }
 
-input:focus,
-input:hover  {
+input:focus {
 	border:1px solid #1088eb;
 }
 
@@ -176,4 +175,8 @@ a {
 
 	
 
+}
+
+.valid {
+	border: 1px solid cyan;
 }
